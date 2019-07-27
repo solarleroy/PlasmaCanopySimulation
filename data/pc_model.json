@@ -1,0 +1,204 @@
+{
+	"outputs": [
+		{
+			"startUniverse" : 0,
+			"IP" : "2.1.1.11"
+		},
+		{
+			"startUniverse" : 1,
+			"IP" : "2.1.1.12"
+		},
+		{
+			"startUniverse" : 2,
+			"IP" : "2.1.1.13"
+		},
+		{
+			"startUniverse" : 3,
+			"IP" : "2.1.1.14"
+		},
+		{
+			"startUniverse" : 4,
+			"IP" : "2.1.1.15"
+		},
+		{
+			"startUniverse" : 5,
+			"IP" : "2.1.1.16"
+		},
+		{
+			"startUniverse" : 6,
+			"IP" : "2.1.1.17"
+		},
+		{
+			"startUniverse" : 7,
+			"IP" : "2.1.1.18"
+		},
+		{
+			"startUniverse" : 8,
+			"IP" : "2.1.1.19"
+		},
+		{
+			"startUniverse" : 0,
+			"IP" : "2.1.1.20"
+		},
+		{
+			"startUniverse" : 2,
+			"IP" : "2.1.1.20"
+		}		
+	],
+	"fixturearray":[
+	{
+		"origin": [3.0,3.0,2.0],
+		"output" : 0,
+		"tubes" : [
+			{
+				"orient": [-30,30,0],
+				"type": 0
+			},
+			{
+				"orient": [180,180,0],
+				"type": 0
+			},
+			{
+				"orient": [30,30,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			}
+		]
+	},
+	{
+		"origin": [-3.0,3.0,2.0],
+		"output" : 1,
+		"tubes" : [
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			}
+		]
+	},
+	{
+		"origin": [-3.0,3.0,-2.0],
+		"output" : 1,
+		"tubes" : [
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			},
+			{
+				"orient": [0,0,0],
+				"type": 0
+			}
+		]
+	},
+	{
+		"origin": [3.0,3.0,-2.0],
+		"output" : 1,
+		"tubes" : [
+			{
+				"orient": [0,210,120],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			},
+			{
+				"orient": [0,180,0],
+				"type": 0
+			}
+		]
+	},
+	
+
+]
+}
