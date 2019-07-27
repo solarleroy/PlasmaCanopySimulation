@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "timestamp": 1564218427227,
+  "timestamp": 1564219989181,
   "engine": {
     "id": 1,
     "class": "heronarts.lx.LXEngine",
@@ -21,7 +21,7 @@
       "multithreaded": true,
       "channelMultithreaded": false,
       "networkMultithreaded": false,
-      "framesPerSecond": 60.0
+      "framesPerSecond": 120.0
     },
     "palette": {
       "id": 2,
@@ -124,7 +124,7 @@
         "nudgeDown": false,
         "beatsPerMeasure": 4,
         "trigger": false,
-        "enabled": false
+        "enabled": true
       }
     },
     "audio": {
@@ -133,7 +133,7 @@
       "modulationColor": -16737025,
       "parameters": {
         "label": "Audio",
-        "enabled": false,
+        "enabled": true,
         "mode": 0
       },
       "meter": {
@@ -142,27 +142,27 @@
         "modulationColor": -64768,
         "parameters": {
           "label": "Meter",
-          "running": false,
+          "running": true,
           "trigger": false,
           "gain": 0.0,
           "range": 48.0,
           "attack": 10.0,
           "release": 100.0,
           "slope": 4.5,
-          "Band-1": 0.0,
-          "Band-2": 0.0,
-          "Band-3": 0.0,
-          "Band-4": 0.0,
-          "Band-5": 0.0,
-          "Band-6": 0.0,
-          "Band-7": 0.0,
-          "Band-8": 0.0,
-          "Band-9": 0.0,
-          "Band-10": 0.0,
-          "Band-11": 0.0,
-          "Band-12": 0.0,
-          "Band-13": 0.0,
-          "Band-14": 0.0,
+          "Band-1": 0.10474478222944883,
+          "Band-2": 0.22959464971989618,
+          "Band-3": 0.3026102257810446,
+          "Band-4": 0.3738336359365463,
+          "Band-5": 0.34798371458666866,
+          "Band-6": 0.27420577316466943,
+          "Band-7": 0.19420370695179312,
+          "Band-8": 0.1525811073400991,
+          "Band-9": 0.03959307718662097,
+          "Band-10": 0.17739157247313264,
+          "Band-11": 0.24146767868026953,
+          "Band-12": 0.26525480772946597,
+          "Band-13": 0.15768169339953853,
+          "Band-14": 0.02032729042950354,
           "Band-15": 0.0,
           "Band-16": 0.0
         }
@@ -173,7 +173,7 @@
         "modulationColor": -1048321,
         "parameters": {
           "label": "Audio Input",
-          "device": 0
+          "device": 1
         }
       },
       "output": {
@@ -204,7 +204,97 @@
     },
     "components": {},
     "modulation": {
-      "modulators": [],
+      "modulators": [
+        {
+          "id": 62,
+          "class": "heronarts.lx.modulator.VariableLFO",
+          "modulationColor": -65469,
+          "parameters": {
+            "label": "LFO 1",
+            "running": true,
+            "trigger": false,
+            "loop": true,
+            "tempoSync": true,
+            "tempoMultiplier": 5,
+            "tempoLock": true,
+            "clockMode": 2,
+            "periodFast": 1000.0,
+            "periodSlow": 10000.0,
+            "wave": 0,
+            "skew": 0.0,
+            "shape": 0.0,
+            "phase": 0.0,
+            "exp": 0.0
+          },
+          "basis": 0.3940000000000623
+        },
+        {
+          "id": 63,
+          "class": "heronarts.lx.modulator.MultiStageEnvelope",
+          "modulationColor": -65441,
+          "parameters": {
+            "label": "Env 1",
+            "running": false,
+            "trigger": false,
+            "loop": false,
+            "tempoSync": false,
+            "tempoMultiplier": 5,
+            "tempoLock": true,
+            "period": 1000.0
+          },
+          "basis": 1.0,
+          "stages": [
+            {
+              "basis": 0.0,
+              "value": 0.0,
+              "shape": 1.0
+            },
+            {
+              "basis": 1.0,
+              "value": 1.0,
+              "shape": 1.0
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "class": "heronarts.lx.audio.BandGate",
+          "modulationColor": -131328,
+          "parameters": {
+            "label": "Beat 1",
+            "running": true,
+            "trigger": false,
+            "gain": 0.0,
+            "range": 36.0,
+            "attack": 10.0,
+            "release": 100.0,
+            "slope": 4.5,
+            "threshold": 0.8,
+            "floor": 0.75,
+            "decay": 400.0,
+            "minFreq": 60.0,
+            "maxFreq": 120.0,
+            "gate": false,
+            "average": 0.027817438009980378,
+            "tap": false
+          }
+        },
+        {
+          "id": 65,
+          "class": "heronarts.lx.modulator.MacroKnobs",
+          "modulationColor": -65447,
+          "parameters": {
+            "label": "Macro 1",
+            "running": true,
+            "trigger": false,
+            "macro1": 0.0,
+            "macro2": 0.0,
+            "macro3": 0.0,
+            "macro4": 0.0,
+            "macro5": 0.0
+          }
+        }
+      ],
       "modulations": [],
       "triggers": []
     },
@@ -235,7 +325,12 @@
       "paletteExpanded": true,
       "cameraExpanded": true,
       "clipViewVisible": false,
-      "modulatorExpanded": {},
+      "modulatorExpanded": {
+        "62": true,
+        "63": true,
+        "64": true,
+        "65": true
+      },
       "preview": {
         "mode": 0,
         "animation": false,
@@ -248,21 +343,21 @@
         "camera": {
           "active": false,
           "radius": 354.5695724583846,
-          "theta": -0.6540000000000005,
-          "phi": -0.12900000000000011,
-          "x": 65.08124256134033,
-          "y": 118.9581298828125,
-          "z": 20.50035536289215
+          "theta": -0.5160000000000003,
+          "phi": -0.1260000000000001,
+          "x": 50.795421838760376,
+          "y": 121.9581298828125,
+          "z": 31.4509414434433
         },
         "cue": [
           {
             "active": false,
             "radius": 354.5695724583846,
-            "theta": -0.6540000000000005,
-            "phi": -0.12900000000000011,
-            "x": 65.08124256134033,
-            "y": 118.9581298828125,
-            "z": 20.50035536289215
+            "theta": -0.5160000000000003,
+            "phi": -0.1260000000000001,
+            "x": 50.795421838760376,
+            "y": 121.9581298828125,
+            "z": 31.4509414434433
           },
           {
             "active": false,
