@@ -22,6 +22,7 @@ $ open PlasmaCanopySimulation.pde
 ```
 
 Code something awesome with using the existing patterns as a template! Feel free to reach out to Leroy for any questions and pointers at leroyck@me.com. We look forward to seeing what you come up with!
+
 ---
 
 **BY DOWNLOADING OR USING THE LX STUDIO SOFTWARE OR ANY PART THEREOF, YOU AGREE TO THE TERMS AND CONDITIONS OF THE [LX STUDIO SOFTWARE LICENSE AND DISTRIBUTION AGREEMENT](http://lx.studio/license).**
