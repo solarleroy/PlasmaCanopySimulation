@@ -37,7 +37,7 @@ void onUIReady(heronarts.lx.studio.LXStudio lx, heronarts.lx.studio.LXStudio.UI 
   // Add custom UI components here
     ui.preview.addComponent(new UISpiderTruss());
     for(Tube t : tcr.tubes){
-      for(TubeSegment ts : t.segments){
+      for(UITubeSegment ts : t.segments){
         ui.preview.addComponent(ts);
       }
     }

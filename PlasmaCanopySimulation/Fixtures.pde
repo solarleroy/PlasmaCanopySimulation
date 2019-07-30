@@ -124,8 +124,8 @@ public class Chandelier implements LXFixture {
 }
 
 public class Tube implements LXFixture{
-    List<TubeSegment> segments = new ArrayList<TubeSegment>();
     List<LXPoint> points = new ArrayList<LXPoint>();
+    List<UITubeSegment> segments = new ArrayList<UITubeSegment>();
     private float[][] end_points = new float[2][3];
     private final float DISTANCE = METRE/60;
     protected float offset = 5*CM;
@@ -149,7 +149,7 @@ public class Tube implements LXFixture{
 
         t.translate(2*offset,0,0);
         for(int i =0; i<num; ++i){
-            segments.add(new TubeSegment(t));
+            segments.add(new UITubeSegment(t));
             t.translate(DISTANCE,0,0);
         }
         t.translate(offset,0,0);
@@ -158,7 +158,7 @@ public class Tube implements LXFixture{
         end_points[1][1] = t.y();
         end_points[1][2] = t.z();
 
-        for(TubeSegment s : segments){
+        for(UITubeSegment s : segments){
             points.add(s.point);
         }
 
@@ -168,28 +168,6 @@ public class Tube implements LXFixture{
     }
     public float[][] getEnds(){
         return end_points;
-    }
-}
-
-public class TubeSegment extends UI3dComponent{
-    LXPoint point;
-    UICylinder tube;
-    LXMatrix m;
-    private final float RADIUS = 2.5*CM;
-    private final int DETAIL = 6;
-
-    TubeSegment(LXTransform t){
-        m = new LXMatrix(t.getMatrix());
-        tube = new UICylinder(RADIUS, METRE/60, DETAIL);
-        point = new LXPoint(t.x(),t.y(),t.z());
-    }
-    public void onDraw(UI ui, PGraphics pg){
-        pg.pushMatrix();
-        pg.applyMatrix(m.m11,m.m12,m.m13,m.m14,m.m21,m.m22,m.m23,m.m24,m.m31,m.m32,m.m33,m.m34,m.m41,m.m42,m.m43,m.m44);
-        pg.rotateZ(PI/2);
-        tube.updateColour(lx.getColors()[point.index]);
-        tube.onDraw(ui,pg);
-        pg.popMatrix();
     }
 }
 

@@ -42,6 +42,28 @@ public class UISpiderTruss extends UI3dComponent{
     }
 }
 
+public class UITubeSegment extends UI3dComponent{
+    LXPoint point;
+    UICylinder tube;
+    LXMatrix m;
+    private final float RADIUS = 2.5*CM;
+    private final int DETAIL = 6;
+
+    UITubeSegment(LXTransform t){
+        m = new LXMatrix(t.getMatrix());
+        tube = new UICylinder(RADIUS, METRE/60, DETAIL);
+        point = new LXPoint(t.x(),t.y(),t.z());
+    }
+    public void onDraw(UI ui, PGraphics pg){
+        pg.pushMatrix();
+        pg.applyMatrix(m.m11,m.m12,m.m13,m.m14,m.m21,m.m22,m.m23,m.m24,m.m31,m.m32,m.m33,m.m34,m.m41,m.m42,m.m43,m.m44);
+        pg.rotateZ(PI/2);
+        tube.updateColour(lx.getColors()[point.index]);
+        tube.onDraw(ui,pg);
+        pg.popMatrix();
+    }
+}
+
 public static abstract class UITrussLeg extends UI3dComponent{
     protected final float MAIN_TUBE_DIAMETER = 3.5*CM;
     protected final float SUPPORT_TUBE_DIAMETER = 1.5*CM;
