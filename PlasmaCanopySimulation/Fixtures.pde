@@ -149,7 +149,9 @@ public class Tube implements LXFixture{
 
         t.translate(2*offset,0,0);
         for(int i =0; i<num; ++i){
-            segments.add(new UITubeSegment(t));
+            LXPoint p = new LXPoint(t.x(),t.y(),t.z());
+            points.add(p);
+            segments.add(new UITubeSegment(t,p));
             t.translate(DISTANCE,0,0);
         }
         t.translate(offset,0,0);
@@ -157,10 +159,6 @@ public class Tube implements LXFixture{
         end_points[1][0] = t.x();
         end_points[1][1] = t.y();
         end_points[1][2] = t.z();
-
-        for(UITubeSegment s : segments){
-            points.add(s.point);
-        }
 
     }
     public List<LXPoint> getPoints(){

@@ -49,10 +49,10 @@ public class UITubeSegment extends UI3dComponent{
     private final float RADIUS = 2.5*CM;
     private final int DETAIL = 6;
 
-    UITubeSegment(LXTransform t){
+    UITubeSegment(LXTransform t, LXPoint p){
         m = new LXMatrix(t.getMatrix());
         tube = new UICylinder(RADIUS, METRE/60, DETAIL);
-        point = new LXPoint(t.x(),t.y(),t.z());
+        point = p;
     }
     public void onDraw(UI ui, PGraphics pg){
         pg.pushMatrix();
