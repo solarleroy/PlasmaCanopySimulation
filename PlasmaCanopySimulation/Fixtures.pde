@@ -125,6 +125,7 @@ public class Chandelier implements LXFixture {
 
 public class Tube implements LXFixture{
     List<TubeSegment> segments = new ArrayList<TubeSegment>();
+    List<LXPoint> points = new ArrayList<LXPoint>();
     private float[][] end_points = new float[2][3];
     private final float DISTANCE = METRE/60;
     protected float offset = 5*CM;
@@ -157,13 +158,13 @@ public class Tube implements LXFixture{
         end_points[1][1] = t.y();
         end_points[1][2] = t.z();
 
+        for(TubeSegment s : segments){
+            points.add(s.point);
+        }
+
     }
     public List<LXPoint> getPoints(){
-        List<LXPoint> out = new ArrayList<LXPoint>();
-        for(TubeSegment s : segments){
-            out.add(s.point);
-        }
-        return out;
+        return points;
     }
     public float[][] getEnds(){
         return end_points;
@@ -173,42 +174,20 @@ public class Tube implements LXFixture{
 public class TubeSegment extends UI3dComponent{
     LXPoint point;
     UICylinder tube;
-    float[] m = new float[16];
+    LXMatrix m;
     private final float RADIUS = 2.5*CM;
-    private final int DETAIL = 10;
+    private final int DETAIL = 6;
 
     TubeSegment(LXTransform t){
-        LXMatrix m = t.getMatrix();
-        this.m[0] = m.m11;
-        this.m[1] = m.m12;
-        this.m[2] = m.m13;
-        this.m[3] = m.m14;
-        this.m[4] = m.m21;
-        this.m[5] = m.m22;
-        this.m[6] = m.m23;
-        this.m[7] = m.m24;
-        this.m[8] = m.m31;
-        this.m[9] = m.m32;
-        this.m[10] = m.m33;
-        this.m[11] = m.m34;
-        this.m[12] = m.m41;
-        this.m[13] = m.m42;
-        this.m[14] = m.m43;
-        this.m[15] = m.m44;
-
+        m = new LXMatrix(t.getMatrix());
         tube = new UICylinder(RADIUS, METRE/60, DETAIL);
         point = new LXPoint(t.x(),t.y(),t.z());
     }
     public void onDraw(UI ui, PGraphics pg){
         pg.pushMatrix();
-        pg.applyMatrix(m[0],m[1],m[2],m[3],m[4],m[5],m[6],m[7],m[8],m[9],m[10],m[11],m[12],m[13],m[14],m[15]);
+        pg.applyMatrix(m.m11,m.m12,m.m13,m.m14,m.m21,m.m22,m.m23,m.m24,m.m31,m.m32,m.m33,m.m34,m.m41,m.m42,m.m43,m.m44);
         pg.rotateZ(PI/2);
-        try{
-            int colour = colours[point.index];
-            tube.updateColour(colour);
-        }catch(NullPointerException e){
-
-        }
+        tube.updateColour(lx.getColors()[point.index]);
         tube.onDraw(ui,pg);
         pg.popMatrix();
     }

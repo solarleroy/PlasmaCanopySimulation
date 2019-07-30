@@ -18,8 +18,6 @@ heronarts.lx.studio.LXStudio lx;
 Model model;
 Telekinetik tcr;
 
-int[] colours;
-
 void setup() {
   // Processing setup, constructs the window and the LX instance
   size(1280, 720, P3D);
@@ -33,7 +31,6 @@ void setup() {
 
 void initialize(final heronarts.lx.studio.LXStudio lx, heronarts.lx.studio.LXStudio.UI ui) {
   // Add custom components or output drivers here
-      colours = lx.getColors();
 }
 
 void onUIReady(heronarts.lx.studio.LXStudio lx, heronarts.lx.studio.LXStudio.UI ui) {
@@ -48,7 +45,6 @@ void onUIReady(heronarts.lx.studio.LXStudio lx, heronarts.lx.studio.LXStudio.UI 
 }
 
 void draw() {
-  colours = lx.getColors();
 }
 
 // Configuration flags
