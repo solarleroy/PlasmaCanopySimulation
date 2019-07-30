@@ -125,7 +125,6 @@ public class Chandelier implements LXFixture {
 
 public class Tube implements LXFixture{
     List<LXPoint> points = new ArrayList<LXPoint>();
-    List<UITubeSegment> segments = new ArrayList<UITubeSegment>();
     private float[][] end_points = new float[2][3];
     private final float DISTANCE = METRE/60;
     protected float offset = 5*CM;

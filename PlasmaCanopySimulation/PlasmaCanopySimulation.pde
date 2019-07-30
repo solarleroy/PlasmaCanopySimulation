@@ -17,11 +17,13 @@ heronarts.lx.studio.LXStudio lx;
 // Top-level, we have a model and an LXStudio instance
 Model model;
 Telekinetik tcr;
+List<UITubeSegment> segments;
 
 void setup() {
-  // Processing setup, constructs the window and the LX instance
-  size(1280, 720, P3D);
-    
+    // Processing setup, constructs the window and the LX instance
+    size(1280, 720, P3D);
+        
+    segments = new ArrayList<UITubeSegment>();
     // Create the model, which describes where our light points are
     tcr = new Telekinetik();
     model = new Model();
@@ -30,18 +32,15 @@ void setup() {
 }
 
 void initialize(final heronarts.lx.studio.LXStudio lx, heronarts.lx.studio.LXStudio.UI ui) {
-  // Add custom components or output drivers here
+    // Add custom components or output drivers here
 }
 
 void onUIReady(heronarts.lx.studio.LXStudio lx, heronarts.lx.studio.LXStudio.UI ui) {
-  // Add custom UI components here
+    // Add custom UI components here
     ui.preview.addComponent(new UISpiderTruss());
-    for(Tube t : tcr.tubes){
-      for(UITubeSegment ts : t.segments){
+    for(UITubeSegment ts : segments){
         ui.preview.addComponent(ts);
-      }
     }
-
 }
 
 void draw() {
