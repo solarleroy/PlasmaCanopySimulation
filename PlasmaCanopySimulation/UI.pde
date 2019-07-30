@@ -2,6 +2,8 @@ public class UISpiderTruss extends UI3dComponent{
     private final float RAD = 6*METRE;
     private final float THETA = (float)Math.PI/3;
     private final float SPACING = 6*METRE*(float)Math.sqrt(2);
+    private final float TRUSS_RADIUS = 10*CM;
+    private final float HORIZONTAL_TRUSS_LENGTH = (float)Math.sqrt(2)*TRUSS_RADIUS;
 
     UITrussRing ring;
     UITrussRing[] legs = new UITrussRing[6];
@@ -17,18 +19,17 @@ public class UISpiderTruss extends UI3dComponent{
     @Override
     protected void onDraw(UI ui, PGraphics pg){
         // move 0,0 to top
-        // pg.translate()
         pg.pushMatrix();
 
-        pg.translate(0,5*METRE-UICurvedTrussLeg.HORIZONTAL_LENGTH-10*CM, 0);
+        pg.translate(0,5*METRE-HORIZONTAL_TRUSS_LENGTH, 0);
         ring.onDraw(ui, pg);
 
         pg.popMatrix();
 
         for( int i=0;i<6;++i ) {
             float yaw = i*THETA;
-            float x = (RAD/2+UICurvedTrussLeg.HORIZONTAL_LENGTH) * (float)Math.cos(Math.PI/4-yaw);
-            float z = (RAD/2+UICurvedTrussLeg.HORIZONTAL_LENGTH) * (float)Math.sin(Math.PI/4-yaw);
+            float x = (RAD/2+HORIZONTAL_TRUSS_LENGTH) * (float)Math.cos(Math.PI/4-yaw);
+            float z = (RAD/2+HORIZONTAL_TRUSS_LENGTH) * (float)Math.sin(Math.PI/4-yaw);
 
             pg.pushMatrix();
             pg.translate(x, 0, z);
@@ -73,113 +74,6 @@ public static abstract class UITrussLeg extends UI3dComponent{
     protected final float ANGLED_LENGTH =(float)Math.sqrt(2)*HORIZONTAL_LENGTH;
     protected float[] v;
 
-}
-
-
-//Deprecated
-public class UICurvedTrussLeg extends UITrussLeg{
-    private final int DETAIL = 50;
-    private final float ARC = ((float)Math.PI/2);
-    private static final float RADIUS = 5*METRE;
-    private final float ARC_LENGTH = RADIUS * (float)Math.tan(ARC/DETAIL/2);//tan(arc/2) = l / radius 
-    public UICurvedTrussLeg(float x,float y,float z,float yaw){
-        this.v = new float[]{x,y,z,yaw};
-    }
-    @Override
-    protected void onDraw(UI ui, PGraphics pg){
-        //Structural elements
-        pg.pushMatrix();
-        pg.translate(v[0],v[1],v[2]);
-        pg.rotateY(v[3]);
-
-        for(int i=0;i<4;++i){
-            pg.rotateY((float)Math.PI/2);
-            pg.pushMatrix();
-            pg.translate(TRUSS_RADIUS,0,0);
-            pg.rotateY(-(float)Math.PI/4-i*(float)Math.PI/2);
-            addStructuralArc(i,ui,pg);
-            pg.rotateY(-(float)Math.PI/2+i*(float)Math.PI/2);
-            // addAngledSections(ui,pg,i);
-            pg.popMatrix();
-        }
-        pg.popMatrix();
-        //Horizonal braces
-    }
-
-    private void addAngledSections(UI ui,PGraphics pg,int number){
-        int num_cross_braces = (int)((ARC*RADIUS-10*CM)/(ANGLED_LENGTH/(float)Math.sqrt(2)))/2;
-
-        pg.pushMatrix();
-        pg.translate(0,3*CM,0);
-        pg.rotateX(-(float)Math.PI/4);
-        for(int i =0;i<9;++i){
-            // switch(number){
-            //     case 0:
-            //     case 1:break;
-            //     case 2:pg.rotateY(2*ARC/num_cross_braces);break;
-            //     case 3:pg.rotateY(-2*ARC/num_cross_braces);break;
-            // }
-            // pg.rotateZ(-i*ARC/num_cross_braces/4);
-            if(i%2==0){
-                pg.rotateX((float)Math.PI/2);
-            }else{
-                pg.rotateX(-(float)Math.PI/2);
-            }
-            // if(number%2==0){
-            // pg.rotateY(number%2*2*ARC/num_cross_braces);
-            // }
-
-            new UICylinder(
-                    SUPPORT_TUBE_DIAMETER/2, 
-                    ANGLED_LENGTH,DETAIL).onDraw(ui,pg);
-            pg.translate(0,ANGLED_LENGTH,0);
-            switch(number){
-                case 0: {
-                    //Approximate
-                    pg.rotateZ(-1.7*ARC/num_cross_braces);
-                    break;
-                }
-                case 1:{
-                    pg.rotateX(1.05*ARC/num_cross_braces);
-                    break;
-                }
-                case 2:{
-                    //Approximate
-                    pg.rotateZ(1.7*ARC/num_cross_braces);
-                    break;
-                }
-                case 3:{
-                    pg.rotateX(-1.05*ARC/num_cross_braces);
-                    break;
-                }
-            }
-            
-            // pg.rotateX(-(float)Math.PI/2);
-            // if(number%2!=0){
-            //     pg.rotateY(ARC/num_cross_braces);
-            // }
-        }
-        pg.popMatrix();
-
-    }
-
-    private void addStructuralArc(int j, UI ui,PGraphics pg){
-        pg.pushMatrix();
-        for(int i =0;i<DETAIL;++i){
-
-            float length = j==0||j==1?
-                (RADIUS+HORIZONTAL_LENGTH)*ARC/DETAIL
-                :ARC_LENGTH;
-
-
-            new UICylinder(
-                    MAIN_TUBE_DIAMETER/2, 
-                    length,DETAIL).onDraw(ui,pg);
-            pg.rotateX(ARC/DETAIL);
-            pg.translate(0,ARC_LENGTH,0);
-        }
-        pg.popMatrix();
-    }
 }
 
 public static class UITrussRing extends UI3dComponent{
@@ -243,7 +137,7 @@ public static class UIGenericTrussRing extends UITrussLeg{
     protected void onDraw(UI ui, PGraphics pg){
         //Structural elements
         pg.pushMatrix();
-        pg.translate(v[0],v[1],v[2]);
+        pg.translate(v[0],v[1]-HORIZONTAL_LENGTH/2,v[2]);
         pg.rotateX(v[3]);
         pg.rotateY(v[4]);
         pg.rotateZ(v[5]);
