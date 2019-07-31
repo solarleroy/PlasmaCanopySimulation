@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "timestamp": 1564532912704,
+  "timestamp": 1564538884340,
   "engine": {
     "id": 1,
     "class": "heronarts.lx.LXEngine",
@@ -68,7 +68,22 @@
             "parameters": {
               "label": "BitCrush",
               "enabled": false,
-              "bits": 255.0
+              "bits": 100.0
+            },
+            "modulation": {
+              "modulators": [],
+              "modulations": [],
+              "triggers": []
+            }
+          },
+          {
+            "id": 76,
+            "class": "PlasmaCanopySimulation$BitCrushColour",
+            "modulationColor": -16776193,
+            "parameters": {
+              "label": "BitCrushColour",
+              "enabled": false,
+              "bits": 100.0
             },
             "modulation": {
               "modulators": [],
@@ -131,7 +146,7 @@
           "parameters": {
             "label": "BitCrush",
             "enabled": false,
-            "bits": 255.0
+            "bits": 100.0
           },
           "modulation": {
             "modulators": [],
