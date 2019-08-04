@@ -125,6 +125,9 @@ public class Chandelier implements LXFixture {
 
 public class Tube implements LXFixture{
     List<LXPoint> points = new ArrayList<LXPoint>();
+    public float[] centroid;
+    public float xMin, yMin, zMin;
+    public float xMax, yMax, zMax;
     private float[][] end_points = new float[2][3];
     private final float DISTANCE = METRE/60;
     protected float offset = 5*CM;
@@ -159,6 +162,42 @@ public class Tube implements LXFixture{
         end_points[1][1] = t.y();
         end_points[1][2] = t.z();
 
+        compute();
+    }
+
+    private void compute() {
+        float[] sum = new float[]{0,0,0};
+        int count = 0;
+        List<LXPoint> points = this.getPoints();
+        for(LXPoint p : points){
+            sum[0]+=p.x;
+            sum[1]+=p.y;
+            sum[2]+=p.z;
+            count++;
+        }
+        
+        this.centroid = new float[]{
+            sum[0]/count,
+            sum[1]/count,
+            sum[2]/count
+        };
+
+        xMin = centroid[0];
+        xMax = centroid[0];
+        yMin = centroid[1];
+        yMax = centroid[1];
+        zMin = centroid[2];
+        zMax = centroid[2];
+
+        for(LXPoint p : points){
+            if(p.x > xMax) xMax = p.x;
+            if(p.x < xMin) xMin = p.x;
+            if(p.y > yMax) yMax = p.y;
+            if(p.y < yMin) yMin = p.y;
+            if(p.z > zMax) zMax = p.z;
+            if(p.z < zMin) zMin = p.z;
+
+        }
     }
     public List<LXPoint> getPoints(){
         return points;
