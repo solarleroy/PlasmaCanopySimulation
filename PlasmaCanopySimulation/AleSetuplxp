@@ -1,0 +1,330 @@
+{
+  "version": "0.1",
+  "timestamp": 1564951937055,
+  "engine": {
+    "id": 1,
+    "class": "heronarts.lx.LXEngine",
+    "modulationColor": -16383745,
+    "parameters": {
+      "label": "Engine",
+      "scene-1": false,
+      "scene-2": false,
+      "scene-3": false,
+      "scene-4": false,
+      "scene-5": false,
+      "crossfader": 0.5,
+      "crossfaderBlendMode": 0,
+      "speed": 1.0,
+      "focusedChannel": 0,
+      "cueA": false,
+      "cueB": false,
+      "multithreaded": true,
+      "channelMultithreaded": false,
+      "networkMultithreaded": false,
+      "framesPerSecond": 60.0
+    },
+    "palette": {
+      "id": 2,
+      "class": "heronarts.lx.color.LXPalette",
+      "modulationColor": -15597824,
+      "parameters": {
+        "label": "",
+        "hueMode": 0,
+        "color/brightness": 100.0,
+        "color/saturation": 100.0,
+        "color/hue": 0.0,
+        "period": 120000.0,
+        "range": 10.0
+      }
+    },
+    "channels": [
+      {
+        "id": 26,
+        "class": "heronarts.lx.LXChannel",
+        "modulationColor": -3801344,
+        "parameters": {
+          "label": "Channel-1",
+          "arm": false,
+          "selected": false,
+          "enabled": true,
+          "cue": false,
+          "fader": 1.0,
+          "crossfadeGroup": 0,
+          "blendMode": 0,
+          "midiMonitor": false,
+          "midiChannel": 16,
+          "autoCycleEnabled": false,
+          "autoCycleMode": 0,
+          "autoCycleTimeSecs": 60.0,
+          "transitionEnabled": false,
+          "transitionTimeSecs": 5.0,
+          "transitionBlendMode": 0
+        },
+        "effects": [],
+        "clips": [],
+        "patternIndex": 1,
+        "patterns": [
+          {
+            "id": 23,
+            "class": "heronarts.lx.pattern.IteratorPattern",
+            "modulationColor": -65467,
+            "parameters": {
+              "label": "Iterator",
+              "speed": 10.0
+            },
+            "modulation": {
+              "modulators": [],
+              "modulations": [],
+              "triggers": []
+            },
+            "autoCycleEnabled": false
+          },
+          {
+            "id": 38,
+            "class": "PlasmaCanopySimulation$A4",
+            "modulationColor": -65304,
+            "parameters": {
+              "label": "A4",
+              "A": 1.0,
+              "B": 2.0,
+              "C": 1.0,
+              "D": 1.0,
+              "OLink": false,
+              "floorswitch": false,
+              "s1R": 3.639999955892563,
+              "s1P": 15.629999708384275,
+              "s1t": 3.300999984011054,
+              "s2R": 2.0,
+              "s2p": 1.0,
+              "s2t": 0.009999999776482582
+            },
+            "modulation": {
+              "modulators": [],
+              "modulations": [],
+              "triggers": []
+            },
+            "autoCycleEnabled": true
+          }
+        ]
+      }
+    ],
+    "master": {
+      "id": 14,
+      "class": "heronarts.lx.LXMasterChannel",
+      "modulationColor": -2304,
+      "parameters": {
+        "label": "Master",
+        "arm": false,
+        "selected": false
+      },
+      "effects": [],
+      "clips": []
+    },
+    "tempo": {
+      "id": 21,
+      "class": "heronarts.lx.Tempo",
+      "modulationColor": -65490,
+      "parameters": {
+        "label": "",
+        "clockSource": 0,
+        "period": 500.0,
+        "bpm": 120.0,
+        "tap": false,
+        "nudgeUp": false,
+        "nudgeDown": false,
+        "beatsPerMeasure": 4,
+        "trigger": false,
+        "enabled": false
+      }
+    },
+    "audio": {
+      "id": 16,
+      "class": "heronarts.lx.audio.LXAudioEngine",
+      "modulationColor": -65299,
+      "parameters": {
+        "label": "Audio",
+        "enabled": false,
+        "mode": 0
+      },
+      "meter": {
+        "id": 19,
+        "class": "heronarts.lx.audio.GraphicMeter",
+        "modulationColor": -1507584,
+        "parameters": {
+          "label": "Meter",
+          "running": false,
+          "trigger": false,
+          "gain": 0.0,
+          "range": 48.0,
+          "attack": 10.0,
+          "release": 100.0,
+          "slope": 4.5,
+          "Band-1": 0.0,
+          "Band-2": 0.0,
+          "Band-3": 0.0,
+          "Band-4": 0.0,
+          "Band-5": 0.0,
+          "Band-6": 0.0,
+          "Band-7": 0.0,
+          "Band-8": 0.0,
+          "Band-9": 0.0,
+          "Band-10": 0.0,
+          "Band-11": 0.0,
+          "Band-12": 0.0,
+          "Band-13": 0.0,
+          "Band-14": 0.0,
+          "Band-15": 0.0,
+          "Band-16": 0.0
+        }
+      },
+      "input": {
+        "id": 17,
+        "class": "heronarts.lx.audio.LXAudioInput",
+        "modulationColor": -3145984,
+        "parameters": {
+          "label": "Audio Input",
+          "device": 0
+        }
+      },
+      "output": {
+        "id": 18,
+        "class": "heronarts.lx.audio.LXAudioOutput",
+        "modulationColor": -42240,
+        "parameters": {
+          "label": "Audio Output",
+          "file": "",
+          "trigger": false,
+          "looping": false,
+          "play": false
+        }
+      }
+    },
+    "output": {
+      "id": 15,
+      "class": "heronarts.lx.LXEngine$Output",
+      "modulationColor": -65322,
+      "parameters": {
+        "label": "Output",
+        "enabled": true,
+        "mode": 0,
+        "fps": 0.0,
+        "gamma": 0,
+        "brightness": 1.0
+      }
+    },
+    "components": {},
+    "modulation": {
+      "modulators": [],
+      "modulations": [],
+      "triggers": []
+    },
+    "osc": {
+      "id": 20,
+      "class": "heronarts.lx.osc.LXOscEngine",
+      "modulationColor": -15073025,
+      "parameters": {
+        "label": "OSC",
+        "receiveHost": "0.0.0.0",
+        "receivePort": 3030,
+        "receiveActive": false,
+        "transmitHost": "localhost",
+        "transmitPort": 3131,
+        "transmitActive": false
+      }
+    },
+    "midi": {
+      "inputs": [],
+      "surfaces": [],
+      "mapping": [],
+      "keyboard": false
+    }
+  },
+  "externals": {
+    "ui": {
+      "audioExpanded": true,
+      "paletteExpanded": true,
+      "cameraExpanded": true,
+      "clipViewVisible": false,
+      "modulatorExpanded": {},
+      "preview": {
+        "mode": 0,
+        "animation": false,
+        "animationTime": 1000.0,
+        "projection": 0,
+        "perspective": 60.0,
+        "depth": 1.0,
+        "phiLock": true,
+        "centerPoint": false,
+        "camera": {
+          "active": false,
+          "radius": 342.4103698730469,
+          "theta": 0.21000000000000008,
+          "phi": 0.9929999999999998,
+          "x": 0.0,
+          "y": 147.9581298828125,
+          "z": 0.0
+        },
+        "cue": [
+          {
+            "active": false,
+            "radius": 342.4103698730469,
+            "theta": 0.21000000000000008,
+            "phi": 0.9929999999999998,
+            "x": 0.0,
+            "y": 147.9581298828125,
+            "z": 0.0
+          },
+          {
+            "active": false,
+            "radius": 120.0,
+            "theta": 0.0,
+            "phi": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "active": false,
+            "radius": 120.0,
+            "theta": 0.0,
+            "phi": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "active": false,
+            "radius": 120.0,
+            "theta": 0.0,
+            "phi": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "active": false,
+            "radius": 120.0,
+            "theta": 0.0,
+            "phi": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "active": false,
+            "radius": 120.0,
+            "theta": 0.0,
+            "phi": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        ],
+        "focus": 0,
+        "pointCloud": {
+          "pointSize": 3.0
+        }
+      }
+    }
+  }
+}
