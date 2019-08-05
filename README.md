@@ -23,6 +23,12 @@ $ open PlasmaCanopySimulation.pde
 
 Code something awesome with using the existing patterns as a template! Feel free to reach out to Leroy for any questions and pointers at leroyck@me.com. We look forward to seeing what you come up with!
 
+###Build Update
+
+On 3rd August 2019, [Telekinetik](https://telekinetik.org) crew completed fabrication of the LED fixtures. We now have approximately 160 tubes tested and ready for installation. This means that the vast bulk of the fabrication work is complete, with some minor work left with finishing up the electrical enclosures for the LED controllers. 
+
+![PlasmaCanopySimulation](media/pc-tubes-built.jpg)
+
 ---
 
 **BY DOWNLOADING OR USING THE LX STUDIO SOFTWARE OR ANY PART THEREOF, YOU AGREE TO THE TERMS AND CONDITIONS OF THE [LX STUDIO SOFTWARE LICENSE AND DISTRIBUTION AGREEMENT](http://lx.studio/license).**
