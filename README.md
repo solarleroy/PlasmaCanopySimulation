@@ -1,8 +1,8 @@
 ![PlasmaCanopySimulation](media/pc-screenshot.png)
 
-**Plasma Canopy** is a volumetric LED art piece that is due to debut at Burning Seed 2019 with [Telekinetik Chair Repair](https://telekinetik.org). Three-dimensional dynamic content synchronises to music to create an immersive space for people to enjoy shared experiences.
+**Plasma Canopy** is a volumetric LED art piece that is due to debut at Burning Seed 2019 (on site 22/9/2019 - 02/10/2019) with [Telekinetik Chair Repair](https://telekinetik.org). Three-dimensional dynamic content synchronises to music to create an immersive space for people to enjoy shared experiences.
 
-The lighting hardware features approximately 150 diffuse LED tubes that provide a 360 degree field of view, that are waterproofed, exposed to the elements and clearly visible from a distance.
+The lighting hardware features approximately 160 diffuse LED tubes that provide a 360 degree field of view, that are waterproofed, exposed to the elements and clearly visible from a distance.
 
 This repository provides a fully fledged simulation instance for developers to contribute patterns and content that will be utilised at Burning Seed 2019 and recycled at future festivals and events.
 
@@ -21,7 +21,9 @@ $ git checkout -b <name_of_your_branch>
 $ open PlasmaCanopySimulation.pde
 ```
 
-Code something awesome with using the existing patterns as a template! Feel free to reach out to Leroy for any questions and pointers at leroyck@me.com. We look forward to seeing what you come up with!
+Code something awesome with using the existing patterns as a template! Feel free to reach out to Leroy for any questions and pointers at leroyck@me.com. We look forward to seeing what you come up with! 
+
+**Note:** feature freeze will occur on 24/09/2019 for Burning Seed 2019, where final testing will occur on the production machine. To ensure that your patterns get to run at the festival, make sure to get your code in prior to that deadline.
 
 ### Build Update
 
