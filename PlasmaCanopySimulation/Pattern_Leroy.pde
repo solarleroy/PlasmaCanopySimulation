@@ -1,6 +1,10 @@
 @LXCategory(LXCategory.TEXTURE)
 public class BitCrush extends LXEffect {
 
+    public String getAuthor() {
+        return "Leroy Clunne-Kiely";
+    }
+
     public CompoundParameter h_bits =
         new CompoundParameter("hue Bits", 360,1,360)
         .setDescription("Granularity of hue");
@@ -52,6 +56,11 @@ public class BitCrush extends LXEffect {
 
 @LXCategory(LXCategory.TEXTURE)
 public class BitCrushColour extends BitCrush {
+
+    @Override
+    public String getAuthor() {
+        return "Leroy Clunne-Kiely";
+    }
 
     public CompoundParameter colourbits =
         new CompoundParameter("Bits", 256,2,256)
