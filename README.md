@@ -6,7 +6,7 @@ The lighting hardware features approximately 160 diffuse LED tubes that provide 
 
 This repository provides a fully fledged simulation instance for developers to contribute patterns and content that will be utilised at Burning Seed 2019 and recycled at future festivals and events.
 
-It runs in Processing using the [LX Studio](https://github.com/heronarts/LXStudio) framework. The system may be controlled directly, or via remote OSC devices. Real-time spatial audio metering and position data can also be used to control animation. You may find the [LXStudio API](http://lx.studio/api/) of use when developing patterns.
+It runs in Processing using [LX Studio](https://github.com/heronarts/LXStudio), an application built on the LX framework. The system may be controlled directly, or via remote OSC devices. Real-time spatial audio metering and position data can also be used to control animation. You may find the [LXStudio API](http://lx.studio/api/) of use when developing patterns; for access to the underlying source code, see the [LX Library](https://github.com/heronarts/LX).
 
 ## Installation
 
