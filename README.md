@@ -20,14 +20,17 @@ $ cd PlasmaCanopySimulation
 $ git checkout -b <name_of_your_branch>
 $ open PlasmaCanopySimulation.pde
 ```
+### Extending
 
-Code something awesome with using the existing patterns as a template! Feel free to reach out to Leroy for any questions and pointers at leroyck@me.com. We look forward to seeing what you come up with! 
+Code something awesome with using the existing patterns as a template! Feel free to reach out to Leroy for any questions and pointers at leroyck@me.com. We look forward to seeing what you come up with!
+
+Create your own patterns in a file called `Pattern_{Your name}.pde`. In order to try your pattern out, open then `PlasmaCanopySimulation` folder in Processing, hit play and click the `BROWSER` tab on the top right. Double click patterns in here to run them.
 
 **Note:** feature freeze will occur on 24/09/2019 for Burning Seed 2019, where final testing will occur on the production machine. To ensure that your patterns get to run at the festival, make sure to get your code in prior to that deadline.
 
 ### Build Update
 
-On 3rd August 2019, [Telekinetik](https://telekinetik.org) crew completed fabrication of the LED fixtures. We now have approximately 160 tubes tested and ready for installation. This means that the vast bulk of the fabrication work is complete, with some minor work left with finishing up the electrical enclosures for the LED controllers. 
+On 3rd August 2019, [Telekinetik](https://telekinetik.org) crew completed fabrication of the LED fixtures. We now have approximately 160 tubes tested and ready for installation. This means that the vast bulk of the fabrication work is complete, with some minor work left with finishing up the electrical enclosures for the LED controllers.
 
 ![PlasmaCanopySimulation](media/pc-tubes-built.jpg)
 
