@@ -1,7 +1,7 @@
 public class UISpiderTruss extends UI3dComponent{
-    private final float RAD = 6*METRE;
+    private final float RAD = 5*METRE;
     private final float THETA = (float)Math.PI/3;
-    private final float SPACING = 6*METRE*(float)Math.sqrt(2);
+    private final float SPACING = 5*METRE*(float)Math.sqrt(2);
     private final float TRUSS_RADIUS = 10*CM;
     private final float HORIZONTAL_TRUSS_LENGTH = (float)Math.sqrt(2)*TRUSS_RADIUS;
 
@@ -21,18 +21,18 @@ public class UISpiderTruss extends UI3dComponent{
         // move 0,0 to top
         pg.pushMatrix();
 
-        pg.translate(0,5*METRE-HORIZONTAL_TRUSS_LENGTH, 0);
+        pg.translate(0,1.5*METRE-HORIZONTAL_TRUSS_LENGTH, 0);
         ring.onDraw(ui, pg);
 
         pg.popMatrix();
 
         for( int i=0;i<6;++i ) {
-            float yaw = i*THETA;
+            float yaw = i*THETA-PI/12+PI/24;
             float x = (RAD/2+HORIZONTAL_TRUSS_LENGTH) * (float)Math.cos(Math.PI/4-yaw);
             float z = (RAD/2+HORIZONTAL_TRUSS_LENGTH) * (float)Math.sin(Math.PI/4-yaw);
 
             pg.pushMatrix();
-            pg.translate(x, 0, z);
+            pg.translate(x, -3.5*METRE, z);
             pg.rotateX(0);
             pg.rotateY(yaw + PI/4);
             pg.rotateZ(PI/2);
@@ -90,10 +90,10 @@ public static class UITrussRing extends UI3dComponent{
     }
 
     public UITrussRing(){
-        this.rings[0] = new UIGenericTrussRing(0,0,0,1*METRE);
-        this.rings[1] = new UIGenericTrussRing(0,BOX_TRUSS_WIDTH,0,1*METRE);
-        this.rings[2] = new UIGenericTrussRing(0,0,0,1*METRE - BOX_TRUSS_WIDTH);
-        this.rings[3] = new UIGenericTrussRing(0,BOX_TRUSS_WIDTH,0,1*METRE - BOX_TRUSS_WIDTH);
+        this.rings[0] = new UIGenericTrussRing(0,0,0,1.5*METRE);
+        this.rings[1] = new UIGenericTrussRing(0,BOX_TRUSS_WIDTH,0,1.5*METRE);
+        this.rings[2] = new UIGenericTrussRing(0,0,0,1.5*METRE - BOX_TRUSS_WIDTH);
+        this.rings[3] = new UIGenericTrussRing(0,BOX_TRUSS_WIDTH,0,1.5*METRE - BOX_TRUSS_WIDTH);
     }
 
     protected void onDraw(UI ui, PGraphics pg) {

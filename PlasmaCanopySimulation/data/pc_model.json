@@ -1,354 +1,837 @@
 {
 	"outputs": [
 		{
+
+			"index" : "0",
+			"box-cable" : "0-1",
 			"startUniverse" : 0,
-			"IP" : "2.1.1.11"
+			"IP" : "2.1.1.203"
 		},
 		{
-			"startUniverse" : 1,
-			"IP" : "2.1.1.12"
-		},
-		{
-			"startUniverse" : 2,
-			"IP" : "2.1.1.13"
-		},
-		{
+			"index" : "1",
+			"box-cable" : "0-2",
 			"startUniverse" : 3,
-			"IP" : "2.1.1.14"
+			"IP" : "2.1.1.203"
 		},
 		{
-			"startUniverse" : 4,
-			"IP" : "2.1.1.15"
-		},
-		{
-			"startUniverse" : 5,
-			"IP" : "2.1.1.16"
-		},
-		{
+			"index" : "2",
+			"box-cable" : "0-3",
 			"startUniverse" : 6,
-			"IP" : "2.1.1.17"
+			"IP" : "2.1.1.203"
 		},
 		{
-			"startUniverse" : 7,
-			"IP" : "2.1.1.18"
+			"index" : "3",
+			"box-cable" : "0-4",
+			"startUniverse" : 9,
+			"IP" : "2.1.1.203"
 		},
 		{
-			"startUniverse" : 8,
-			"IP" : "2.1.1.19"
+			"index" : "4",
+			"box-cable" : "1-1",
+			"startUniverse" : 12,
+			"IP" : "2.1.1.203"
 		},
 		{
-			"startUniverse" : 0,
-			"IP" : "2.1.1.20"
+			"index" : "5",
+			"box-cable" : "1-2",
+			"startUniverse" : 15,
+			"IP" : "2.1.1.203"
 		},
 		{
-			"startUniverse" : 2,
-			"IP" : "2.1.1.20"
-		}		
+			"index" : "6",
+			"box-cable" : "1-3",
+			"startUniverse" : 18,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "7",
+			"box-cable" : "1-4",
+			"startUniverse" : 21,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "8",
+			"box-cable" : "2-1",
+			"startUniverse" : 24,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "9",
+			"box-cable" : "2-2",
+			"startUniverse" : 27,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "10",
+			"box-cable" : "2-3",
+			"startUniverse" : 30,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "11",
+			"box-cable" : "2-4",
+			"startUniverse" : 33,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "12",
+			"box-cable" : "3-1",
+			"startUniverse" : 36,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "13",
+			"box-cable" : "3-2",
+			"startUniverse" : 39,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "14",
+			"box-cable" : "3-3",
+			"startUniverse" : 42,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "15",
+			"box-cable" : "3-4",
+			"startUniverse" : 45,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "16",
+			"box-cable" : "4-1",
+			"startUniverse" : 48,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "17",
+			"box-cable" : "4-2",
+			"startUniverse" : 51,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "18",
+			"box-cable" : "4-3",
+			"startUniverse" : 54,
+			"IP" : "2.1.1.203"
+		},
+		{
+			"index" : "19",
+			"box-cable" : "4-4",
+			"startUniverse" : 57,
+			"IP" : "2.1.1.203"
+		},
 	],
 	"fixturearray":[
 		{
-			"origin": [1.5,4.5,0],
+			"origin": [0,1.2,0],
 			"output" : 0,
 			"tubes" : [
 				{
-					"orient": [0,45,-2],
+					"orient": [0,-240,-67.3],
 					"type": 0
 				},
 				{
-					"orient": [0,75,-4],
+					"orient": [0,-60,-67.1],
 					"type": 0
 				},
 				{
-					"orient": [0,105,-6],
+					"orient": [0,-330,67.1],
 					"type": 0
 				},
 				{
-					"orient": [0,135,-8],
+					"orient": [0,-150,67.1],
 					"type": 0
 				},
 				{
-					"orient": [0,165,-10],
+					"orient": [0,-55,-67.1],
 					"type": 0
 				},
 				{
-					"orient": [0,195,-12],
+					"orient": [0,125,-67.1],
+					"type": 0
+				},	
+			]
+		},
+
+		{
+			"origin": [0,1.2,0],
+			"output" : 1,
+			"tubes" : [
+				{
+					"orient": [0,0,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-120,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-240,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-240,0],
+					"type": 1
+				},
+				{
+					"orient": [0,0,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-120,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-120,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-240,0],
+					"type": 1
+				},
+				{
+					"orient": [-0,0,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-150,-67.3],
 					"type": 0
 				},
 				{
-					"orient": [0,225,-14],
+					"orient": [0,-15,0],
+					"type": 1
+				},
+				{
+					"orient": [0,75,0],
+					"type": 1
+				},
+				{
+					"orient": [0,165,0],
+					"type": 1
+				},
+				{
+					"orient": [0,255,0],
+					"type": 1
+				},
+				{
+					"orient": [0,20,-67.3],
+					"type": 0
+				},
+
+			]
+		},
+		{
+			"origin": [-5,-0.65,0],
+			"output" : 2,
+			"tubes" : [
+				{
+					"orient": [0,-34,-4.7],
 					"type": 0
 				},
 				{
-					"orient": [0,255,-16],
+					"orient": [0,-48.5,-40],
+					"type": 1
+				},
+				{
+					"orient": [0,36,74.9],
+					"type": 0
+				},
+				{
+					"orient": [0,2.7,-3.3],
+					"type": 1
+				},
+				{
+					"orient": [0,7.5,-40],
+					"type": 0
+				},
+				{
+					"orient": [0,-113,29.5],
+					"type": 0
+				},
+				{
+					"orient": [0,-91.4,-28.1],
+					"type": 0
+				},
+				{
+					"orient": [0,14.7,-10.9],
+					"type": 0
+				},
+				{
+					"orient": [0,17,50.4],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [-1.5,4.5,0],
-			"output" : 0,
+			"origin": [-5.5,-0.8,0],
+			"output" : 3,
 			"tubes" : [
 				{
-					"orient": [0,225,-2],
+					"orient": [0,0,50],
 					"type": 0
 				},
 				{
-					"orient": [0,255,-4],
+					"orient": [0,0,16.8],
 					"type": 0
 				},
 				{
-					"orient": [0,285,-6],
+					"orient": [0,-29.4,-5.4],
 					"type": 0
 				},
 				{
-					"orient": [0,315,-8],
+					"orient": [0,-59.2,-41.2],
 					"type": 0
 				},
 				{
-					"orient": [0,345,-10],
+					"orient": [0,77.9,39.5],
 					"type": 0
 				},
 				{
-					"orient": [0,375,-12],
+					"orient": [0,129.2,-37.2],
 					"type": 0
 				},
 				{
-					"orient": [0,405,-14],
+					"orient": [0,67.3,40.9],
 					"type": 0
 				},
 				{
-					"orient": [0,435,-16],
+					"orient": [0,55.7,-2.5],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [0,4.5,-1.5],
-			"output" : 0,
+			"origin": [-3.654,-0.8,4.816],
+			"output" : 6,
 			"tubes" : [
 				{
-					"orient": [0,135,-2],
+					"orient": [0,52.3,47.9],
 					"type": 0
 				},
 				{
-					"orient": [0,165,-4],
+					"orient": [0,58.3,23],
 					"type": 0
 				},
 				{
-					"orient": [0,195,-6],
+					"orient": [0,-31,-43.4],
 					"type": 0
 				},
 				{
-					"orient": [0,225,-8],
+					"orient": [0,98.6,-0.4],
 					"type": 0
 				},
 				{
-					"orient": [0,255,-10],
+					"orient": [0,159.2,0.3],
 					"type": 0
 				},
 				{
-					"orient": [0,285,-12],
+					"orient": [0,40,40],
 					"type": 0
 				},
 				{
-					"orient": [0,315,-14],
+					"orient": [0,-15.4,-41.9],
 					"type": 0
 				},
 				{
-					"orient": [0,345,-16],
+					"orient": [0,-101.5,46.2],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [0,4.5,1.5],
-			"output" : 0,
+			"origin": [-2.9,-0.65,3.9],
+			"output" : 7,
 			"tubes" : [
 				{
-					"orient": [0,-45,-2],
+					"orient": [0,114.5,-5.4],
 					"type": 0
 				},
 				{
-					"orient": [0,-15,-4],
+					"orient": [0,157,2.4],
 					"type": 0
 				},
 				{
-					"orient": [0,15,-6],
+					"orient": [0,104,-15],
 					"type": 0
 				},
 				{
-					"orient": [0,45,-8],
+					"orient": [0,16,11],
 					"type": 0
 				},
 				{
-					"orient": [0,75,-10],
+					"orient": [0,116,28.1],
 					"type": 0
 				},
 				{
-					"orient": [0,105,-12],
+					"orient": [0,92,-31],
 					"type": 0
 				},
 				{
-					"orient": [0,135,-14],
+					"orient": [0,90,56],
 					"type": 0
 				},
 				{
-					"orient": [0,165,-16],
+					"orient": [0,110,-37],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [1.3,4.5,1.3],
-			"output" : 0,
+			"origin": [1.57,0,1.7],
+			"output" : 8,
 			"tubes" : [
 				{
-					"orient": [0,0,-2],
+					"orient": [0,-15,-40],
 					"type": 0
 				},
 				{
-					"orient": [0,160,-4],
+					"orient": [0,70,40],
 					"type": 0
 				},
 				{
-					"orient": [0,0,-6],
+					"orient": [0,83,-40],
 					"type": 0
 				},
 				{
-					"orient": [0,140,-8],
+					"orient": [0,174,-17],
 					"type": 0
 				},
 				{
-					"orient": [0,0,-10],
+					"orient": [0,149,73.5],
 					"type": 0
 				},
 				{
-					"orient": [0,120,-12],
+					"orient": [0,57,-52],
 					"type": 0
 				},
 				{
-					"orient": [0,0,-14],
+					"orient": [0,44,56],
 					"type": 0
 				},
 				{
-					"orient": [0,100,-16],
+					"orient": [0,-161,-55],
+					"type": 1
+				},
+				{
+					"orient": [0,-158,14.7],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [-1.3,4.5,-1.3],
-			"output" : 0,
+			"origin": [3.654,-0.8,4.816],
+			"output" : 9,
 			"tubes" : [
 				{
-					"orient": [0,180,-2],
+					"orient": [0,114.5,45],
 					"type": 0
 				},
 				{
-					"orient": [0,340,-4],
+					"orient": [0,113.2,26],
 					"type": 0
 				},
 				{
-					"orient": [0,180,-6],
+					"orient": [0,133.5,-75.5],
 					"type": 0
 				},
 				{
-					"orient": [0,320,-8],
+					"orient": [0,129.3,16],
 					"type": 0
 				},
 				{
-					"orient": [0,180,-10],
+					"orient": [0,-60,44.8],
 					"type": 0
 				},
 				{
-					"orient": [0,300,-12],
+					"orient": [0,113.2,19],
 					"type": 0
 				},
 				{
-					"orient": [0,180,-14],
+					"orient": [0,166.5,-23.1],
 					"type": 0
 				},
 				{
-					"orient": [0,280,-16],
+					"orient": [0,84,-36.5],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [1.3,4.5,-1.3],
-			"output" : 0,
+			"origin": [2.81,-0.34,2.829],
+			"output" : 10,
 			"tubes" : [
 				{
-					"orient": [0,90,-2],
+					"orient": [0,-8,-45.4],
 					"type": 0
 				},
 				{
-					"orient": [0,250,-4],
+					"orient": [0,128,45],
 					"type": 0
 				},
 				{
-					"orient": [0,90,-6],
+					"orient": [0,106,-52],
 					"type": 0
 				},
 				{
-					"orient": [0,230,-8],
+					"orient": [0,100,-1.5],
 					"type": 0
 				},
 				{
-					"orient": [0,90,-10],
+					"orient": [0,-122.5,40.3],
 					"type": 0
 				},
 				{
-					"orient": [0,210,-12],
+					"orient": [0,-164,-48],
 					"type": 0
 				},
 				{
-					"orient": [0,90,-14],
-					"type": 0
+					"orient": [0,-177,13],
+					"type": 1
 				},
 				{
-					"orient": [0,190,-16],
+					"orient": [0,117,25],
 					"type": 0
 				},
 			]
 		},
 		{
-			"origin": [-1.3,4.5,1.3],
-			"output" : 0,
+			"origin": [1.68,0.15,3.49],
+			"output" : 11,
 			"tubes" : [
 				{
-					"orient": [0,270,-2],
+					"orient": [0,159,-44.2],
 					"type": 0
 				},
 				{
-					"orient": [0,70,-4],
+					"orient": [0,134,0],
+					"type": 1
+				},
+				{
+					"orient": [0,-94,46],
 					"type": 0
 				},
 				{
-					"orient": [0,270,-6],
+					"orient": [0,162,-41.5],
 					"type": 0
 				},
 				{
-					"orient": [0,50,-8],
+					"orient": [0,110,-3],
 					"type": 0
 				},
 				{
-					"orient": [0,270,-10],
+					"orient": [0,-174,6],
+					"type": 1
+				},
+				{
+					"orient": [0,50,36],
 					"type": 0
 				},
 				{
-					"orient": [0,30,-12],
+					"orient": [0,130,25],
 					"type": 0
 				},
 				{
-					"orient": [0,270,-14],
-					"type": 0
-				},
-				{
-					"orient": [0,10,-16],
+					"orient": [0,26,-30],
 					"type": 0
 				},
 			]
 		},
-	]
+		{
+			"origin": [2.25,-0.65,-4.52],
+			"output" : 12,
+			"tubes" : [
+				{
+					"orient": [0,-83,36],
+					"type": 0
+				},
+				{
+					"orient": [0,-124,11],
+					"type": 0
+				},
+				{
+					"orient": [0,-89,-14],
+					"type": 0
+				},
+				{
+					"orient": [0,129,-40],
+					"type": 0
+				},
+				{
+					"orient": [0,116,26],
+					"type": 0
+				},
+				{
+					"orient": [0,-112,14],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [3.654,-0.8,-4.816],
+			"output" : 13,
+			"tubes" : [
+				{
+					"orient": [0,-120.5,44.3],
+					"type": 0
+				},
+				{
+					"orient": [0,-137.8,19.6],
+					"type": 0
+				},
+				{
+					"orient": [0,-124,-6],
+					"type": 0
+				},
+				{
+					"orient": [0,-63,-36.7],
+					"type": 0
+				},
+				{
+					"orient": [0,-34,-1.1],
+					"type": 0
+				},
+				{
+					"orient": [0,-44,3.3],
+					"type": 0
+				},
+				{
+					"orient": [0,-45,42.7],
+					"type": 0
+				},
+				{
+					"orient": [0,61.6,-40.7],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [3,0,-2.22],
+			"output" : 14,
+			"tubes" : [
+				{
+					"orient": [0,-55,2],
+					"type": 0
+				},
+				{
+					"orient": [0,79,-36.7],
+					"type": 0
+				},
+				{
+					"orient": [0,-98,-13.5],
+					"type": 0
+				},
+				{
+					"orient": [0,-130,61],
+					"type": 0
+				},
+				{
+					"orient": [0,115,-32],
+					"type": 0
+				},
+				{
+					"orient": [0,94,31],
+					"type": 0
+				},
+				{
+					"orient": [0,67,-33.6],
+					"type": 0
+				},
+				{
+					"orient": [0,126,3],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [5.5,-0.8,0],
+			"output" : 15,
+			"tubes" : [
+				{
+					"orient": [0,172.5,44.5],
+					"type": 0
+				},
+				{
+					"orient": [0,152,21.8],
+					"type": 0
+				},
+				{
+					"orient": [0,-66.8,-41],
+					"type": 0
+				},
+				{
+					"orient": [0,-109.5,0.2],
+					"type": 0
+				},
+				{
+					"orient": [0,141.9,-3.2],
+					"type": 0
+				},
+				{
+					"orient": [0,70.5,0.6],
+					"type": 0
+				},
+				{
+					"orient": [0,116.8,-0.3],
+					"type": 0
+				},
+				{
+					"orient": [0,-135,46.2],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [-2.2,0,-3.2],
+			"output" : 16,
+			"tubes" : [
+				{
+					"orient": [0,-132,-66.9],
+					"type": 0
+				},
+				{
+					"orient": [0,-132,15.8],
+					"type": 0
+				},
+				{
+					"orient": [0,-76,37],
+					"type": 0
+				},
+				{
+					"orient": [0,-151,3.8],
+					"type": 0
+				},
+				{
+					"orient": [0,-44,5],
+					"type": 0
+				},
+				{
+					"orient": [0,176,2.7],
+					"type": 0
+				},
+				{
+					"orient": [0,-69,-0.5],
+					"type": 0
+				},
+				{
+					"orient": [0,-154,1],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [-2.7,-0.65,-4],
+			"output" : 17,
+			"tubes" : [
+				{
+					"orient": [0,-28,34],
+					"type": 0
+				},
+				{
+					"orient": [0,-32,-38.6],
+					"type": 0
+				},
+				{
+					"orient": [0,-84.7,30.3],
+					"type": 0
+				},
+				{
+					"orient": [0,-33.5,-35.5],
+					"type": 0
+				},
+				{
+					"orient": [0,126,42],
+					"type": 0
+				},
+				{
+					"orient": [0,-54,25],
+					"type": 0
+				},
+				{
+					"orient": [0,10,-63],
+					"type": 0
+				},
+				{
+					"orient": [0,12,26.4],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [1.26,-0.65,-2.85],
+			"output" : 18,
+			"tubes" : [
+				{
+					"orient": [0,134,3],
+					"type": 0
+				},
+				{
+					"orient": [0,-112,-0.3],
+					"type": 0
+				},
+				{
+					"orient": [0,-27,38],
+					"type": 0
+				},
+				{
+					"orient": [0,-109,-38],
+					"type": 0
+				},
+				{
+					"orient": [0,108,4],
+					"type": 0
+				},
+				{
+					"orient": [0,-173,43],
+					"type": 0
+				},
+				{
+					"orient": [0,-127,-2.3],
+					"type": 0
+				},
+				{
+					"orient": [0,-52,-8],
+					"type": 0
+				},
+			]
+		},
+		{
+			"origin": [-3.654,-0.8,-4.816],
+			"output" : 19,
+			"tubes" : [
+				{
+					"orient": [0,-72.5,42],
+					"type": 0
+				},
+				{
+					"orient": [0,-68.5,19],
+					"type": 0
+				},
+				{
+					"orient": [0,-63.5,-6.5],
+					"type": 0
+				},
+				{
+					"orient": [0,-35.7,-69.7],
+					"type": 1
+				},
+				{
+					"orient": [0,7.5,-27.8],
+					"type": 0
+				},
+				{
+					"orient": [0,19,67],
+					"type": 0
+				},
+				{
+					"orient": [0,60,7.7],
+					"type": 0
+				},
+				{
+					"orient": [0,96.7,-39.9],
+					"type": 0
+				},
+			]
+		},
+	],
 }
