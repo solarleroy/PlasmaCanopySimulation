@@ -1,4 +1,4 @@
-![PlasmaCanopySimulation](media/pc-screenshot.png)
+![PlasmaCanopySimulation](media/pc-screenshot1.png)
 
 **Plasma Canopy** is a volumetric LED art piece that is due to debut at Burning Seed 2019 (on site 22/9/2019 - 02/10/2019) with [Telekinetik Chair Repair](https://telekinetik.org). Three-dimensional dynamic content synchronises to music to create an immersive space for people to enjoy shared experiences.
 
