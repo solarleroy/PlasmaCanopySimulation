@@ -20,29 +20,30 @@ public class Telekinetik{
 
     //When mapping tubes in the canopy, orientations are to be from a global reference; so use a smartphone gyro app
     public PlasmaCanopy pc;
-    public Chandelier chandelier;
+    // public Chandelier chandelier;
     public Tube[] tubes;
 
     public Telekinetik(){
 
-        chandelier = new Chandelier(0,4.8*METRE,0,20);
+        // chandelier = new Chandelier(0,4.8*METRE,0,20);
         pc = new PlasmaCanopy();
-        tubes = new Tube[pc.tubes.size()+chandelier.tubes.size()];
+        tubes = new Tube[pc.tubes.size()];
+        //+chandelier.tubes.size()];
 
         int i=0;
         for(Tube t : pc.tubes){
             tubes[i] = t;
             ++i;
         }
-        i=0;
-        for(Tube t : chandelier.tubes){
-            tubes[pc.tubes.size()+i] = t;
-            ++i;
-        }
+        // i=0;
+        // for(Tube t : chandelier.tubes){
+        //     tubes[pc.tubes.size()+i] = t;
+        //     ++i;
+        // }
 
 
         fixtures.add(pc);
-        fixtures.add(chandelier);
+        // fixtures.add(chandelier);
 
         for(LXFixture f : tubes){
             fixtures.add(f);
